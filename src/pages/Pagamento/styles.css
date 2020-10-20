@@ -1,0 +1,130 @@
+.pagamentoContainer {
+	width: 100%;
+	height: 100%;
+	padding: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.pagamentoContainer h1 {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.pagamentoContainer h1::after {
+	content: '';
+	position: absolute;
+	bottom: -3rem;
+	left: 0;
+	width: 100%;
+	height: 0.2rem;
+
+	background-color: #cecece;
+}
+
+.containerProdutosShop {
+	margin-top: 2rem;
+	padding: 5rem 2rem;
+}
+
+.pagamentoContainer .containerPrecoFinal {
+	position: relative;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagamentoContainer .containerPrecoFinal::before {
+	content: '';
+	position: absolute;
+	top: -3rem;
+	left: 0;
+	width: 100%;
+	height: 0.2rem;
+
+	background-color: #cecece;
+}
+
+.pagamentoContainer .containerPrecoFinal::after {
+	content: '';
+	position: absolute;
+	bottom: -3rem;
+	left: 0;
+	width: 100%;
+	height: 0.2rem;
+
+	background-color: #cecece;
+}
+
+.pagamentoContainer .containerPrecoFinal .total {
+	align-self: center;
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.pagamentoContainer .containerPrecoFinal .total * {
+	font-weight: bolder;
+}
+
+.pagamentoContainer .containerPrecoFinal .freteGratis {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	margin-top: 4rem;
+}
+
+.pagamentoContainer .containerPrecoFinal .freteGratis h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 50%;
+	height: 5rem;
+
+	border-radius: 5rem;
+
+	text-align: center;
+	font-size: 2.4rem;
+	letter-spacing: 0.1rem;
+
+	background-color: var(--verde-claro);
+	color: var(--verde-escuro);
+}
+
+.pagamentoContainer .containerButton {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagamentoContainer .containerButton button {
+	width: 40%;
+	background-color: var(--azul);
+	color: #fff;
+
+	padding: 1.2rem 0;
+	border-radius: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-weight: 800;
+	cursor: pointer;
+
+	margin-top: 10rem;
+
+	transition: all 0.3s ease;
+}
+
+.pagamentoContainer .containerButton button:hover {
+	transform: scale(1.01);
+	box-shadow: 0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.4);
+}

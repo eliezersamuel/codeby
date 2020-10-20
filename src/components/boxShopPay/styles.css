@@ -1,0 +1,38 @@
+.cardBox img {
+	min-width: 15rem;
+	height: auto;
+}
+
+.cardWrapper + .cardWrapper {
+	margin-top: 5rem;
+}
+
+.cardBox {
+	width: 20rem;
+	padding: 0 2rem;
+	border: 0.1rem solid #cecece;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 5rem;
+}
+
+.cardWrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	min-width: 50rem;
+	min-height: 20rem;
+}
+
+.cardWrapper .description h3 {
+	font-weight: bolder;
+	letter-spacing: 0.1rem;
+}
+
+.cardWrapper .description p {
+	font-weight: 600;
+	font-size: 1.8rem;
+}
